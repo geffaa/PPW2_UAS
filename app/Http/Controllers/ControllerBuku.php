@@ -232,6 +232,12 @@ class ControllerBuku extends Controller
         return view('buku.populer', compact('buku_populer'));
     }
 
+    public function kategori()
+{
+    $bukus = Buku::all();
+    return view('buku.kategori', compact('bukus'));
+}
+
     
 
     

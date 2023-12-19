@@ -32,11 +32,17 @@
                     </div>
 
                     <div class="mb-4">
+                        <label for="kategori" class="block text-gray-600">Kategori</label>
+                        <input type="text" id="kategori" name="kategori" placeholder="Masukkan Kategori Buku" class="border border-gray-300 rounded px-3 py-2 w-full">
+                    </div>
+
+                    <div class="mb-4">
                         <label for="thumbnail" class="block text-sm font-medium leading-6 text-gray-900">Thumbnail</label>
                         <div class="mt-2">
                             <input type="file" name="thumbnail" id="thumbnail">
                         </div>
                     </div>
+                    
 
                     <div class="mb-4">
                         <label for="gallery" class="block text-sm font-medium leading-6 text-gray-900">Gallery</label>

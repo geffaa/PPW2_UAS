@@ -7,5 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    use HasFactory;
+    public function books()
+    {
+        return $this->belongsToMany(Book::class);
+    }
+}
+
+class Book extends Model
+{
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class);
+    }
 }

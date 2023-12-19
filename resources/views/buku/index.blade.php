@@ -18,6 +18,9 @@
                     <a href="{{ route('buku.populer') }}" class="px-4 py-2 border border-red-500 text-red-500 bg-red-100 rounded ml-4">
                         {{ __('Buku Populer') }}
                     </a>
+                    <a href="{{ route('buku.kategori') }}" class="px-4 py-2 border border-blue-500 text-blue-500 bg-blue-100 rounded ml-4">
+                        {{ __('Buku Kategori') }}
+                    </a>
                 </div>
             @endauth
             

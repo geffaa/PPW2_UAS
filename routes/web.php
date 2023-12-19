@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/buku/{id}/favorite', [ControllerBuku::class, 'addToFavorites'])->name('buku.favorite');
     Route::get('/buku/myfavorites', [ControllerBuku::class, 'myFavorites'])->name('buku.myfavorites');
     Route::get('/buku-populer', [ControllerBuku::class, 'populer'])->name('buku.populer');
+    Route::get('/buku/kategori', [ControllerBuku::class, 'kategori'])->name('buku.kategori');
 });
 
 Route::middleware(['auth'])->group(function () {
